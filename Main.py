@@ -1,7 +1,7 @@
 # importing all other files and libraries 
 from Data_loading import loader
 from Data_cleaning import encode_features, scale_features
-from Visualizations import plot_heatmap, scatter_plot
+from Visualizations import plot_heatmap, scatterplot
 from Models import train_linear_regression
 from Evaluations import evaluate_model
 
@@ -14,8 +14,8 @@ df = scale_features(df, ['Age', 'BMI', 'Children'])
 
 # Visualize
 plot_heatmap(df)
-scatter_plot(df, 'BMI')
-scatter_plot(df, 'Age')
+scatterplot(df, 'BMI')
+scatterplot(df, 'Age')
 
 # Prepare data for modeling
 X = df.drop(columns='Medical Cost')

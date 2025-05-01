@@ -1,6 +1,7 @@
 # creating a visual example for powerpoint & easy interpretation
 import seaborn as sb
 import matplotlib.pyplot as plt
+import numpy as np
 
 # heatmap
 def plot_heatmap(df):
